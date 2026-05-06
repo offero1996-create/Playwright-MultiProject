@@ -1,0 +1,43 @@
+{
+  "name": "bloomlink-playwright",
+  "version": "1.0.0",
+  "description": "Playwright Automation Framework for Bloomifai & BloomLink",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:bloomlink": "playwright test --project=bloomlink-chromium",
+    "test:bloomifai": "playwright test --project=bloomifai-chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "node show-latest-report.js",
+    "generate:audio": "node scripts/generate-meeting-audio.mjs",
+    "install-browsers": "playwright install",
+    "lint": "eslint projects/** config/** utils/**",
+    "format": "prettier --write projects/** config/** utils/**"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "qa"
+  ],
+  "author": "QA Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^8.56.0",
+    "exceljs": "^4.4.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.9.3",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "say": "^0.16.0"
+  }
+}

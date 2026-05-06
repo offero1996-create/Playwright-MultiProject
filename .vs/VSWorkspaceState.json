@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.playwright-mcp",
+    "\\config",
+    "\\projects",
+    "\\projects\\BloomLink",
+    "\\projects\\BloomLink\\fixtures"
+  ],
+  "SelectedNode": "\\playwright.config.ts",
+  "PreviewInSolutionExplorer": false
+}
